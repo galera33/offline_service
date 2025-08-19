@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Registros de Acesso{% endblock %}
+
+{% block content %}
+<div class="registros-container">
+    <h2>Registros de Acesso</h2>
+    
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>CPF</th>
+                    <th>Data e Hora</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for registro in registros %}
+                <tr>
+                    <td>{{ registro.cpf }}</td>
+                    <td>{{ registro.data_hora }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

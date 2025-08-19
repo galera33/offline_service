@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="options-grid">
+    <div class="option-card">
+        <div class="option-icon"><i class="fas fa-user-plus"></i></div>
+        <div class="option-title">Cadastrar Usuário</div>
+        <a href="/cadastro" class="option-btn">Acessar</a>
+    </div>
+    <div class="option-card">
+        <div class="option-icon"><i class="fas fa-user-plus"></i></div>
+        <div class="option-title">verificar cpf</div>
+        <a href="/verificar-cpf" class="option-btn">Acessar</a>
+    </div>
+    <div class="option-card">
+        <div class="option-icon"><i class="fas fa-user-check"></i></div>
+        <div class="option-title">Registrar Atividade</div>
+        <a href="/registrar_atividade" class="option-btn">Acessar</a>
+    </div>
+    <div class="option-card">
+        <div class="option-icon"><i class="fas fa-qrcode"></i></div>
+        <div class="option-title">Ler QR Code</div>
+        <a href="/camera" class="option-btn">Acessar</a>
+    </div>
+    <div class="option-card">
+        <div class="option-icon"><i class="fas fa-barcode"></i></div>
+        <div class="option-title">Gerar QR Code</div>
+        <a href="/gerar-qrcode" class="option-btn">Acessar</a>
+    </div>
+    <div class="option-card">
+        <div class="option-icon"><i class="fas fa-history"></i></div>
+        <div class="option-title">Ver Registros</div>
+        <a href="/registros" class="option-btn">Acessar</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,853 @@
+{
+  "timestamp": "2025-08-18T15:46:15.155006",
+  "endpoint": "cpf-status",
+  "cpf": "841.668.820-66",
+  "status_code": 200,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/cpf-status",
+    "method": "POST",
+    "body": "{\"cpf\": \"841.668.820-66\"}"
+  },
+  "response": {
+    "sucesso": true,
+    "dados": {
+      "existe": false,
+      "cadastro_completo": false
+    }
+  }
+},
+{
+  "timestamp": "2025-08-18T15:46:16.592442",
+  "endpoint": "pre-cadastro",
+  "cpf": "841.668.820-66",
+  "status_code": 403,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/pre-cadastro",
+    "method": "POST",
+    "body": "{\"nome\": \"Juan Caio\", \"email\": \"juancaio.galera@gmail.com\", \"cpf\": \"841.668.820-66\", \"celular\": \"(11) 94074-9160\"}"
+  },
+  "response": {
+    "sucesso": false,
+    "erros": {
+      "email": "E-mail já cadastrado na promoção.",
+      "celular": "Celular já cadastrado na promoção."
+    }
+  }
+},
+{
+  "timestamp": "2025-08-18T15:53:26.628597",
+  "endpoint": "cpf-status",
+  "cpf": "466.809.590-71",
+  "status_code": 200,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/cpf-status",
+    "method": "POST",
+    "body": "{\"cpf\": \"466.809.590-71\"}"
+  },
+  "response": {
+    "sucesso": true,
+    "dados": {
+      "existe": false,
+      "cadastro_completo": false
+    }
+  }
+},
+{
+  "timestamp": "2025-08-18T15:53:26.738173",
+  "endpoint": "pre-cadastro",
+  "cpf": "466.809.590-71",
+  "status_code": 200,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/pre-cadastro",
+    "method": "POST",
+    "body": "{\"nome\": \"Teste Picbrand Local\", \"email\": \"picbrand@gmail.com\", \"cpf\": \"466.809.590-71\", \"celular\": \"(11) 66666-6888\"}"
+  },
+  "response": {
+    "sucesso": true
+  }
+},
+{
+  "timestamp": "2025-08-18T15:55:18.825952",
+  "endpoint": "cpf-status",
+  "cpf": "301.306.630-00",
+  "status_code": 200,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/cpf-status",
+    "method": "POST",
+    "body": "{\"cpf\": \"301.306.630-00\"}"
+  },
+  "response": {
+    "sucesso": true,
+    "dados": {
+      "existe": false,
+      "cadastro_completo": false
+    }
+  }
+},
+{
+  "timestamp": "2025-08-18T15:55:18.921636",
+  "endpoint": "pre-cadastro",
+  "cpf": "301.306.630-00",
+  "status_code": 403,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/pre-cadastro",
+    "method": "POST",
+    "body": "{\"nome\": \"Pic Brand\", \"email\": \"teste@local.com.br\", \"cpf\": \"301.306.630-00\", \"celular\": \"(11) 11111-1111\"}"
+  },
+  "response": {
+    "sucesso": false,
+    "erros": {
+      "celular": "Celular inválido."
+    }
+  }
+},
+{
+  "timestamp": "2025-08-18T16:00:13.216472",
+  "endpoint": "cpf-status",
+  "cpf": "301.306.630-00",
+  "status_code": 200,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/cpf-status",
+    "method": "POST",
+    "body": "{\"cpf\": \"301.306.630-00\"}"
+  },
+  "response": {
+    "sucesso": true,
+    "dados": {
+      "existe": false,
+      "cadastro_completo": false
+    }
+  }
+},
+{
+  "timestamp": "2025-08-18T16:00:13.317035",
+  "endpoint": "pre-cadastro",
+  "cpf": "301.306.630-00",
+  "status_code": 200,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/pre-cadastro",
+    "method": "POST",
+    "body": "{\"nome\": \"Jo\\u00e3o Test\", \"email\": \"joaotest@gmail.com.br\", \"cpf\": \"301.306.630-00\", \"celular\": \"(11) 97059-0862\"}"
+  },
+  "response": {
+    "sucesso": true
+  }
+},
+{
+  "timestamp": "2025-08-18T16:00:41.495498",
+  "endpoint": "cpf-status",
+  "cpf": "251.689.190-30",
+  "status_code": 200,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/cpf-status",
+    "method": "POST",
+    "body": "{\"cpf\": \"251.689.190-30\"}"
+  },
+  "response": {
+    "sucesso": true,
+    "dados": {
+      "existe": false,
+      "cadastro_completo": false
+    }
+  }
+},
+{
+  "timestamp": "2025-08-18T16:00:41.576720",
+  "endpoint": "pre-cadastro",
+  "cpf": "251.689.190-30",
+  "status_code": 403,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/pre-cadastro",
+    "method": "POST",
+    "body": "{\"nome\": \"Jo\\u00e3o Test\", \"email\": \"joaotest@gmail.com.br\", \"cpf\": \"251.689.190-30\", \"celular\": \"(11) 97059-0862\"}"
+  },
+  "response": {
+    "sucesso": false,
+    "erros": {
+      "email": "E-mail já cadastrado na promoção.",
+      "celular": "Celular já cadastrado na promoção."
+    }
+  }
+},
+{
+  "timestamp": "2025-08-18T16:01:30.698341",
+  "endpoint": "cpf-status",
+  "cpf": "380.102.590-04",
+  "status_code": 200,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/cpf-status",
+    "method": "POST",
+    "body": "{\"cpf\": \"380.102.590-04\"}"
+  },
+  "response": {
+    "sucesso": true,
+    "dados": {
+      "existe": false,
+      "cadastro_completo": false
+    }
+  }
+},
+{
+  "timestamp": "2025-08-18T16:01:30.788691",
+  "endpoint": "pre-cadastro",
+  "cpf": "380.102.590-04",
+  "status_code": 200,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/pre-cadastro",
+    "method": "POST",
+    "body": "{\"nome\": \"Maria Test\", \"email\": \"mariaotest@gmail.com.br\", \"cpf\": \"380.102.590-04\", \"celular\": \"(11) 99357-9669\"}"
+  },
+  "response": {
+    "sucesso": true
+  }
+},
+{
+  "timestamp": "2025-08-18T16:41:09.377867",
+  "endpoint": "cpf-status",
+  "cpf": "537.502.628-70",
+  "status_code": 200,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/cpf-status",
+    "method": "POST",
+    "body": "{\"cpf\": \"537.502.628-70\"}"
+  },
+  "response": {
+    "sucesso": true,
+    "dados": {
+      "existe": true,
+      "cadastro_completo": false
+    }
+  }
+},
+{
+  "timestamp": "2025-08-18T16:42:13.967149",
+  "endpoint": "cpf-status",
+  "cpf": "537.502.628-70",
+  "status_code": 200,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/cpf-status",
+    "method": "POST",
+    "body": "{\"cpf\": \"537.502.628-70\"}"
+  },
+  "response": {
+    "sucesso": true,
+    "dados": {
+      "existe": true,
+      "cadastro_completo": false
+    }
+  }
+},
+{
+  "timestamp": "2025-08-18T17:01:04.207207",
+  "endpoint": "atividade",
+  "cpf": "537.502.628-70",
+  "status_code": 403,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/atividade",
+    "method": "POST",
+    "body": "{\"cpf\": \"537.502.628-70\", \"atividade\": \"the one\"}"
+  },
+  "response": {
+    "sucesso": false,
+    "erro": "Atividade já realizada."
+  }
+},
+{
+  "timestamp": "2025-08-18T17:03:56.721889",
+  "endpoint": "atividade",
+  "cpf": "537.502.628-70",
+  "status_code": 403,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/atividade",
+    "method": "POST",
+    "body": "{\"cpf\": \"537.502.628-70\", \"atividade\": \"the one\"}"
+  },
+  "response": {
+    "sucesso": false,
+    "erro": "Atividade já realizada."
+  }
+},
+{
+  "timestamp": "2025-08-18T17:13:20.053621",
+  "endpoint": "atividade",
+  "cpf": "537.502.628-70",
+  "status_code": 403,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/atividade",
+    "method": "POST",
+    "body": "{\"cpf\": \"537.502.628-70\", \"atividade\": \"the one\"}"
+  },
+  "response": {
+    "sucesso": false,
+    "erro": "Atividade já realizada."
+  }
+},
+{
+  "timestamp": "2025-08-18T17:17:00.444607",
+  "endpoint": "atividade",
+  "cpf": "537.502.628-70",
+  "status_code": 403,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/atividade",
+    "method": "POST",
+    "body": "{\"cpf\": \"537.502.628-70\", \"atividade\": \"the one\"}"
+  },
+  "response": {
+    "sucesso": false,
+    "erro": "Atividade já realizada."
+  }
+},
+{
+  "timestamp": "2025-08-18T17:19:01.489927",
+  "endpoint": "atividade",
+  "cpf": "537.502.628-70",
+  "status_code": 403,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/atividade",
+    "method": "POST",
+    "body": "{\"cpf\": \"537.502.628-70\", \"atividade\": \"the one\"}"
+  },
+  "response": {
+    "sucesso": false,
+    "erro": "Atividade já realizada."
+  }
+},
+{
+  "timestamp": "2025-08-18T17:21:15.872766",
+  "endpoint": "atividade",
+  "cpf": "537.502.628-70",
+  "status_code": 403,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/atividade",
+    "method": "POST",
+    "body": "{\"cpf\": \"537.502.628-70\", \"atividade\": \"the one\"}"
+  },
+  "response": {
+    "sucesso": false,
+    "erro": "Atividade já realizada."
+  }
+},
+{
+  "timestamp": "2025-08-18T17:24:00.889160",
+  "endpoint": "atividade",
+  "cpf": "537.502.628-70",
+  "status_code": 403,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/atividade",
+    "method": "POST",
+    "body": "{\"cpf\": \"537.502.628-70\", \"atividade\": \"the one\"}"
+  },
+  "response": {
+    "sucesso": false,
+    "erro": "Atividade já realizada."
+  }
+},
+{
+  "timestamp": "2025-08-18T17:25:35.568981",
+  "endpoint": "cpf-status",
+  "cpf": "537.502.628-70",
+  "status_code": 200,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/cpf-status",
+    "method": "POST",
+    "body": "{\"cpf\": \"537.502.628-70\"}"
+  },
+  "response": {
+    "sucesso": true,
+    "dados": {
+      "existe": true,
+      "cadastro_completo": false
+    }
+  }
+},
+{
+  "timestamp": "2025-08-18T17:26:02.295154",
+  "endpoint": "cpf-status",
+  "cpf": "080.732.440-04",
+  "status_code": 200,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/cpf-status",
+    "method": "POST",
+    "body": "{\"cpf\": \"080.732.440-04\"}"
+  },
+  "response": {
+    "sucesso": true,
+    "dados": {
+      "existe": false,
+      "cadastro_completo": false
+    }
+  }
+},
+{
+  "timestamp": "2025-08-18T17:29:19.997846",
+  "endpoint": "atividade",
+  "cpf": "537.502.628-70",
+  "status_code": 403,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/atividade",
+    "method": "POST",
+    "body": "{\"cpf\": \"537.502.628-70\", \"atividade\": \"the one\"}"
+  },
+  "response": {
+    "sucesso": false,
+    "erro": "Atividade já realizada."
+  }
+},
+{
+  "timestamp": "2025-08-18T17:43:02.844978",
+  "endpoint": "cpf-status",
+  "cpf": "537.502.628-70",
+  "status_code": 200,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/cpf-status",
+    "method": "POST",
+    "body": "{\"cpf\": \"537.502.628-70\"}"
+  },
+  "response": {
+    "sucesso": true,
+    "dados": {
+      "existe": true,
+      "cadastro_completo": false
+    }
+  }
+},
+{
+  "timestamp": "2025-08-18T17:54:50.232357",
+  "endpoint": "cpf-status",
+  "cpf": "537.502.628-70",
+  "status_code": 200,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/cpf-status",
+    "method": "POST",
+    "body": "{\"cpf\": \"537.502.628-70\"}"
+  },
+  "response": {
+    "sucesso": true,
+    "dados": {
+      "existe": true,
+      "cadastro_completo": false
+    }
+  }
+},
+{
+  "timestamp": "2025-08-18T17:55:17.601053",
+  "endpoint": "cpf-status",
+  "cpf": "537.502.628-70",
+  "status_code": 200,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/cpf-status",
+    "method": "POST",
+    "body": "{\"cpf\": \"537.502.628-70\"}"
+  },
+  "response": {
+    "sucesso": true,
+    "dados": {
+      "existe": true,
+      "cadastro_completo": false
+    }
+  }
+},
+{
+  "timestamp": "2025-08-18T17:59:40.098997",
+  "endpoint": "cpf-status",
+  "cpf": "537.502.628-70",
+  "status_code": 200,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/cpf-status",
+    "method": "POST",
+    "body": "{\"cpf\": \"537.502.628-70\"}"
+  },
+  "response": {
+    "sucesso": true,
+    "dados": {
+      "existe": true,
+      "cadastro_completo": false
+    }
+  }
+},
+{
+  "timestamp": "2025-08-18T18:00:15.492384",
+  "endpoint": "cpf-status",
+  "cpf": "537.502.628-70",
+  "status_code": 200,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/cpf-status",
+    "method": "POST",
+    "body": "{\"cpf\": \"537.502.628-70\"}"
+  },
+  "response": {
+    "sucesso": true,
+    "dados": {
+      "existe": true,
+      "cadastro_completo": false
+    }
+  }
+},
+{
+  "timestamp": "2025-08-18T18:46:01.599682",
+  "endpoint": "cpf-status",
+  "cpf": "381.172.700-13",
+  "status_code": 200,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/cpf-status",
+    "method": "POST",
+    "body": "{\"cpf\": \"381.172.700-13\"}"
+  },
+  "response": {
+    "sucesso": true,
+    "dados": {
+      "existe": false,
+      "cadastro_completo": false
+    }
+  }
+},
+{
+  "timestamp": "2025-08-18T18:46:01.675831",
+  "endpoint": "pre-cadastro",
+  "cpf": "381.172.700-13",
+  "status_code": 403,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/pre-cadastro",
+    "method": "POST",
+    "body": "{\"nome\": \"validation\", \"email\": \"validation@gmail.com\", \"cpf\": \"381.172.700-13\", \"celular\": \"(11) 99725-7885\"}"
+  },
+  "response": {
+    "sucesso": false,
+    "erros": {
+      "nome": "Preencha seu nome completo."
+    }
+  }
+},
+{
+  "timestamp": "2025-08-18T18:47:38.005262",
+  "endpoint": "skyline",
+  "cpf": "537.502.628-70",
+  "status_code": 403,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/atividade",
+    "method": "POST",
+    "body": "{\"cpf\": \"537.502.628-70\", \"atividade\": \"skyline\"}"
+  },
+  "response": {
+    "sucesso": false,
+    "erro": "Atividade já realizada."
+  }
+},
+{
+  "timestamp": "2025-08-18T18:47:54.485397",
+  "endpoint": "skyline",
+  "cpf": "381.172.700-13",
+  "status_code": 403,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/atividade",
+    "method": "POST",
+    "body": "{\"cpf\": \"381.172.700-13\", \"atividade\": \"skyline\"}"
+  },
+  "response": {
+    "sucesso": false,
+    "erros": {
+      "cpf": "CPF não está cadastrado."
+    }
+  }
+},
+{
+  "timestamp": "2025-08-18T18:48:05.913705",
+  "endpoint": "skyline",
+  "cpf": "381.172.700-13",
+  "status_code": 403,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/atividade",
+    "method": "POST",
+    "body": "{\"cpf\": \"381.172.700-13\", \"atividade\": \"skyline\"}"
+  },
+  "response": {
+    "sucesso": false,
+    "erros": {
+      "cpf": "CPF não está cadastrado."
+    }
+  }
+},
+{
+  "timestamp": "2025-08-18T18:49:05.109485",
+  "endpoint": "cpf-status",
+  "cpf": "381.172.700-13",
+  "status_code": 200,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/cpf-status",
+    "method": "POST",
+    "body": "{\"cpf\": \"381.172.700-13\"}"
+  },
+  "response": {
+    "sucesso": true,
+    "dados": {
+      "existe": false,
+      "cadastro_completo": false
+    }
+  }
+},
+{
+  "timestamp": "2025-08-18T18:49:05.204285",
+  "endpoint": "pre-cadastro",
+  "cpf": "381.172.700-13",
+  "status_code": 200,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/pre-cadastro",
+    "method": "POST",
+    "body": "{\"nome\": \"validation test\", \"email\": \"validation@gmail.com\", \"cpf\": \"381.172.700-13\", \"celular\": \"(11) 99725-7885\"}"
+  },
+  "response": {
+    "sucesso": true
+  }
+},
+{
+  "timestamp": "2025-08-18T18:50:44.838954",
+  "endpoint": "cpf-status",
+  "cpf": "107.823.180-02",
+  "status_code": 200,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/cpf-status",
+    "method": "POST",
+    "body": "{\"cpf\": \"107.823.180-02\"}"
+  },
+  "response": {
+    "sucesso": true,
+    "dados": {
+      "existe": false,
+      "cadastro_completo": false
+    }
+  }
+},
+{
+  "timestamp": "2025-08-18T18:50:44.926006",
+  "endpoint": "pre-cadastro",
+  "cpf": "107.823.180-02",
+  "status_code": 200,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/pre-cadastro",
+    "method": "POST",
+    "body": "{\"nome\": \"vali test\", \"email\": \"val@gmail.com\", \"cpf\": \"107.823.180-02\", \"celular\": \"(11) 99723-7885\"}"
+  },
+  "response": {
+    "sucesso": true
+  }
+},
+{
+  "timestamp": "2025-08-18T18:51:15.858631",
+  "endpoint": "skyline",
+  "cpf": "107.823.180-02",
+  "status_code": 200,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/atividade",
+    "method": "POST",
+    "body": "{\"cpf\": \"107.823.180-02\", \"atividade\": \"skyline\"}"
+  },
+  "response": {
+    "sucesso": true
+  }
+},
+{
+  "timestamp": "2025-08-18T18:51:21.695748",
+  "endpoint": "skyline",
+  "cpf": "107.823.180-02",
+  "status_code": 403,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/atividade",
+    "method": "POST",
+    "body": "{\"cpf\": \"107.823.180-02\", \"atividade\": \"skyline\"}"
+  },
+  "response": {
+    "sucesso": false,
+    "erro": "Atividade já realizada."
+  }
+},
+{
+  "timestamp": "2025-08-18T18:59:58.175329",
+  "endpoint": "skyline",
+  "cpf": "107.823.180-02",
+  "status_code": 403,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/atividade",
+    "method": "POST",
+    "body": "{\"cpf\": \"107.823.180-02\", \"atividade\": \"skyline\"}"
+  },
+  "response": {
+    "sucesso": false,
+    "erro": "Atividade já realizada."
+  }
+},
+{
+  "timestamp": "2025-08-18T19:00:29.940063",
+  "endpoint": "skyline",
+  "cpf": "107.823.180-02",
+  "status_code": 403,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/atividade",
+    "method": "POST",
+    "body": "{\"cpf\": \"107.823.180-02\", \"atividade\": \"skyline\"}"
+  },
+  "response": {
+    "sucesso": false,
+    "erro": "Atividade já realizada."
+  }
+},
+{
+  "timestamp": "2025-08-18T19:01:44.348008",
+  "endpoint": "skyline",
+  "cpf": "107.823.180-02",
+  "status_code": 403,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/atividade",
+    "method": "POST",
+    "body": "{\"cpf\": \"107.823.180-02\", \"atividade\": \"skyline\"}"
+  },
+  "response": {
+    "sucesso": false,
+    "erro": "Atividade já realizada."
+  }
+},
+{
+  "timestamp": "2025-08-18T19:04:37.351328",
+  "endpoint": "skyline",
+  "cpf": "107.823.180-02",
+  "status_code": 403,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/atividade",
+    "method": "POST",
+    "body": "{\"cpf\": \"107.823.180-02\", \"atividade\": \"skyline\"}"
+  },
+  "response": {
+    "sucesso": false,
+    "erro": "Atividade já realizada."
+  }
+},
+{
+  "timestamp": "2025-08-18T19:09:29.774099",
+  "endpoint": "skyline",
+  "cpf": "107.823.180-02",
+  "status_code": 403,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/atividade",
+    "method": "POST",
+    "body": "{\"cpf\": \"107.823.180-02\", \"atividade\": \"skyline\"}"
+  },
+  "response": {
+    "sucesso": false,
+    "erro": "Atividade já realizada."
+  }
+},
+{
+  "timestamp": "2025-08-18T19:10:57.178990",
+  "endpoint": "skyline",
+  "cpf": "107.823.180-02",
+  "status_code": 403,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/atividade",
+    "method": "POST",
+    "body": "{\"cpf\": \"107.823.180-02\", \"atividade\": \"skyline\"}"
+  },
+  "response": {
+    "sucesso": false,
+    "erro": "Atividade já realizada."
+  }
+},
+{
+  "timestamp": "2025-08-18T19:11:05.747889",
+  "endpoint": "the one",
+  "cpf": "107.823.180-02",
+  "status_code": 200,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/atividade",
+    "method": "POST",
+    "body": "{\"cpf\": \"107.823.180-02\", \"atividade\": \"the one\"}"
+  },
+  "response": {
+    "sucesso": true
+  }
+},
+{
+  "timestamp": "2025-08-18T19:12:35.259796",
+  "endpoint": "cpf-status",
+  "cpf": "107.823.180-02",
+  "status_code": 200,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/cpf-status",
+    "method": "POST",
+    "body": "{\"cpf\": \"107.823.180-02\"}"
+  },
+  "response": {
+    "sucesso": true,
+    "dados": {
+      "existe": true,
+      "cadastro_completo": false
+    }
+  }
+},
+{
+  "timestamp": "2025-08-18T19:13:59.409746",
+  "endpoint": "the one",
+  "cpf": "107.823.180-02",
+  "status_code": 403,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/atividade",
+    "method": "POST",
+    "body": "{\"cpf\": \"107.823.180-02\", \"atividade\": \"the one\"}"
+  },
+  "response": {
+    "sucesso": false,
+    "erro": "Atividade já realizada."
+  }
+},
+{
+  "timestamp": "2025-08-18T19:14:08.264888",
+  "endpoint": "cpf-status",
+  "cpf": "107.823.180-02",
+  "status_code": 200,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/cpf-status",
+    "method": "POST",
+    "body": "{\"cpf\": \"107.823.180-02\"}"
+  },
+  "response": {
+    "sucesso": true,
+    "dados": {
+      "existe": true,
+      "cadastro_completo": false
+    }
+  }
+},
+{
+  "timestamp": "2025-08-18T19:19:33.805991",
+  "endpoint": "cpf-status",
+  "cpf": "107.823.180-02",
+  "status_code": 200,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/cpf-status",
+    "method": "POST",
+    "body": "{\"cpf\": \"107.823.180-02\"}"
+  },
+  "response": {
+    "sucesso": true,
+    "dados": {
+      "existe": true,
+      "cadastro_completo": false
+    }
+  }
+},
+{
+  "timestamp": "2025-08-18T19:23:17.128866",
+  "endpoint": "cpf-status",
+  "cpf": "107.823.180-02",
+  "status_code": 200,
+  "request": {
+    "url": "https://voudevolks.dev01.rpm.com.br/api/evento/cpf-status",
+    "method": "POST",
+    "body": "{\"cpf\": \"107.823.180-02\"}"
+  },
+  "response": {
+    "sucesso": true,
+    "dados": {
+      "existe": true,
+      "cadastro_completo": false
+    }
+  }
+},

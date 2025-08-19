@@ -1,0 +1,85 @@
+/* Estilos base */
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    background-color: #121212;
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    min-height: 100vh;
+}
+
+.main-container {
+    max-width: 100%;
+    padding: 20px;
+}
+
+/* Estilos para cards e botões */
+.option-card {
+    background: #1e1e1e;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.btn {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Estilos para formulários */
+.form-container {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    color: #333;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Mensagens */
+.message-container {
+    text-align: center;
+    padding: 30px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.message-container.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.message-container.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}

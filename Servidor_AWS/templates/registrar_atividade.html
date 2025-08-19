@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Atividade</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card {
+            max-width: 600px;
+            margin: 2rem auto;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        #resultado {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">Registrar Atividade</h5>
+            </div>
+            <div class="card-body">
+                <form id="atividadeForm">
+                    <div class="mb-3">
+                        <label for="cpf" class="form-label">CPF:</label>
+                        <input type="text" 
+                               class="form-control" 
+                               id="cpf" 
+                               name="cpf" 
+                               placeholder="123.456.789-00" 
+                               required
+                               pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                               title="Digite o CPF no formato 123.456.789-00">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="atividade" class="form-label">Atividade:</label>
+                        <input type="text" 
+                               class="form-control" 
+                               id="atividade" 
+                               name="atividade" 
+                               placeholder="skyline" 
+                               required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <span id="spinner" class="spinner-border spinner-border-sm d-none" role="status"></span>
+                        Registrar Atividade
+                    </button>
+                </form>
+                
+                <div id="resultado" class="mt-3"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('atividadeForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const cpfInput = document.getElementById('cpf');
+            const atividadeInput = document.getElementById('atividade');
+            const spinner = document.getElementById('spinner');
+            const resultadoDiv = document.getElementById('resultado');
+            
+            // Validação básica
+            if (!cpfInput.value.match(/\d{3}\.\d{3}\.\d{3}-\d{2}/)) {
+                resultadoDiv.innerHTML = `
+                    <div class="alert alert-danger">
+                        Por favor, insira um CPF válido no formato 123.456.789-00
+                    </div>
+                `;
+                return;
+            }
+            
+            if (!atividadeInput.value.trim()) {
+                resultadoDiv.innerHTML = `
+                    <div class="alert alert-danger">
+                        Por favor, informe a atividade
+                    </div>
+                `;
+                return;
+            }
+            
+            // Mostra spinner e desabilita botão
+            spinner.classList.remove('d-none');
+            e.target.querySelector('button').disabled = true;
+            
+            try {
+                const response = await fetch('/registrar_atividade', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        cpf: cpfInput.value,
+                        atividade: atividadeInput.value.trim()
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (data.status === 'success') {
+                    resultadoDiv.innerHTML = `
+                        <div class="alert alert-success">
+                            Atividade registrada com sucesso!
+                        </div>
+                    `;
+                    // Limpa o formulário após sucesso
+                    e.target.reset();
+                } else {
+                    resultadoDiv.innerHTML = `
+                        <div class="alert alert-danger">
+                            Erro ao registrar atividade: ${data.message || 'Erro desconhecido'}
+                        </div>
+                    `;
+                }
+            } catch (error) {
+                resultadoDiv.innerHTML = `
+                    <div class="alert alert-danger">
+                        Erro na comunicação com o servidor: ${error.message}
+                    </div>
+                `;
+            } finally {
+                spinner.classList.add('d-none');
+                e.target.querySelector('button').disabled = false;
+            }
+        });
+
+        // Máscara para o CPF
+        document.getElementById('cpf').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 3) value = value.replace(/^(\d{3})/, '$1.');
+            if (value.length > 7) value = value.replace(/^(\d{3})\.(\d{3})/, '$1.$2.');
+            if (value.length > 11) value = value.replace(/^(\d{3})\.(\d{3})\.(\d{3})/, '$1.$2.$3-');
+            e.target.value = value.substring(0, 14);
+        });
+    </script>
+</body>
+</html>

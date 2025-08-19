@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Leitor de QR Code{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="/static/css/camera.css">
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js"></script>
+<script src="/static/js/camera.js"></script>
+{% endblock %}
+
+{% block content %}
+<div class="camera-view">
+    <h2>Leitor de QR Code</h2>
+    <p>Aponte a câmera para o QR Code</p>
+    
+    <div id="video-container">
+        <video id="video" playsinline></video>
+        <div class="scan-area"></div>
+    </div>
+    
+    <div id="result"></div>
+</div>
+{% endblock %}

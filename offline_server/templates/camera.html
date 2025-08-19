@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Leitura de QRCode</title>
+</head>
+<body>
+    <h2>Leitor de QRCode</h2>
+    <video id="camera" width="400" height="300" autoplay></video>
+    <canvas id="canvas" hidden></canvas>
+    <p id="status">Aguardando QRCode...</p>
+
+    <script src="https://cdn.jsdelivr.net/npm/jsqr/dist/jsQR.js"></script>
+    <script>
+        const video = document.getElementById("camera");
+        const canvas = document.getElementById("canvas");
+        const context = canvas.getContext("2d");
+        const statusText = document.getElementById("status");
+
+        async function startCamera() {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } });
+                video.srcObject = stream;
+
+                const loop = setInterval(() => {
+                    if (video.readyState === video.HAVE_ENOUGH_DATA) {
+                        canvas.width = video.videoWidth;
+                        canvas.height = video.videoHeight;
+                        context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+                        const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
+                        const qrCode = jsQR(imageData.data, imageData.width, imageData.height);
+
+                        if (qrCode) {
+                            statusText.innerText = "QRCode detectado! Enviando...";
+
+                            // Encerra câmera
+                            stream.getTracks().forEach(track => track.stop());
+                            clearInterval(loop);
+
+                            // Envia para o backend
+                            fetch("/process-qrcode", {
+                                method: "POST",
+                                headers: { "Content-Type": "application/json" },
+                                body: JSON.stringify({ qr_data: qrCode.data })
+                            })
+                            .then(async res => {
+                                let data;
+                                try {
+                                    data = await res.json();
+                                } catch {
+                                    throw new Error("Resposta do servidor não é JSON válido.");
+                                }
+
+                                if (data.status === "success") {
+                                    statusText.innerText = "✅ " + data.message;
+                                } else {
+                                    statusText.innerText = "❌ " + data.message;
+                                }
+                            })
+                            .catch(err => {
+                                statusText.innerText = "Erro ao enviar QRCode: " + err.message;
+                            });
+                        }
+                    }
+                }, 300);
+            } catch (err) {
+                alert("Erro ao acessar a câmera: " + err);
+            }
+        }
+
+        startCamera();
+    </script>
+</body>
+</html>

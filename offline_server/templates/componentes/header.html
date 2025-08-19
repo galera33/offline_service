@@ -1,0 +1,10 @@
+<header class="header">
+    <div class="logo-container">
+        <img src="/static/img/PIC.png" alt="Logo" class="logo">
+    </div>
+    {% if request.path != '/' %}
+    <a href="/" class="back-btn">
+        <i class="fas fa-arrow-left"></i> Voltar
+    </a>
+    {% endif %}
+</header>

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="message-container error">
+    <img src="/static/img/PIC.png" alt="Logo" class="logo">
+    <h3>{{ titulo }}</h3>
+    <p>{{ mensagem }}</p>
+    <a href="{{ link_voltar }}" class="btn">Voltar</a>
+</div>
+{% endblock %}
