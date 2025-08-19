@@ -34,6 +34,7 @@ Este projeto é um servidor web desenvolvido em Python utilizando FastAPI, volta
 
 3. Acesse a interface web:
     - [http://localhost:8000](http://localhost:8000)
+    - [http://localhost{IP_Adress}:8000](http://localhost{IP_Adress}:8000)
 
 ## Observações
 
